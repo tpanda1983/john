@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #E5E5E5;
+}
+
+header {
+    padding-top: 27px;
+}
+
+.container {
+    max-width: 1032px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 33px;
+    transition: 0.5s;
+}
+
+header nav li a {
+
+    font-style: normal;
+    font: 500 20px/29px 'Heebo';
+    text-align: right;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-banner {
+    padding-top: 140px;
+    padding-bottom: 71px;
+    font-style: normal;
+}
+
+.main-banner .container {
+    max-width: 855px;
+}
+
+header nav ul li:hover {
+    transform: rotate(360deg);
+}
+
+h1 {
+    font: 700 44px/60px 'Heebo';
+    color: #21243D;
+    margin-bottom: 40px;
+}
+
+.main-banner p {
+    max-width: 498px;
+    font: 400 16px/24px 'Heebo';
+    color: #21243D;
+    margin-bottom: 38px;
+}
+
+.main-banner a {
+    display: inline-block;
+    background: #FF6464;
+    border-radius: 2px;
+    padding: 13px 20px;
+    font: 500 20px/29px 'Heebo';
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main-banner .container-img {
+    max-width: 243px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-banner .container-img img {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    padding-top: 51px;
+    padding-bottom: 54px;
+    background: #FFFFFF;
+}
+
+footer ul {
+    /*display: flex;*/
+    justify-content: center;
+    margin: auto;
+}
+
+footer ul li {
+    margin: 0 17px 26px 17px;
+       }
+
+footer li a img{
+    display: block;
+    margin: 0 auto;
+
+}
+
+footer p {
+    font: 400 14px/21px 'Heebo';
+    text-align: center;
+    color: #21243D;
+}
+
+.form {
+    background: #000000;
+    padding: 69px 0 75px;
+    }
+
+form {
+    margin: auto;
+    max-width: 564px;
+    box-sizing: border-box;
+    padding: 18px 31px;
+    background: rgba(255, 255, 255, 0.18);
+   }
+
+
+input {
+ 
+    background: rgba(255, 255, 255, 0.18);
+}
+/*::placeholder {*/
+/*    font-family: 'Vollkorn';*/
+/*    font-style: italic;*/
+/*    font-weight: 400;*/
+/*    font-size: 17px;*/
+/*    line-height: 22px;*/
+/*    color: #FFFFFF;*/
+
+/*}*/
