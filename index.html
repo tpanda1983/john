@@ -8,9 +8,11 @@
 	<link rel='preconnect' href='https://fonts.googleapis.com'>
 	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
 	<link href='https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
 	<title>John</title>
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
+
 </head>
 <body>
 	<header>
@@ -43,8 +45,36 @@
 				</div>
 			</div>
 		</section>
+		<section class='recent-posts'>
+			<div class='container'>
+				<div class='d-flex justify-between align-center'>
+					<h4>Recent posts</h4>
+					<a href='#'>View all</a>
+				</div>
+				<div class='d-flex justify-between align-start'>
+					<article>
+						<h3>Making a design system from scratch</h3>
+						<div class='year-post'>
+							<span class='year'>12 Feb 2020</span><!--
+						--><span class='type-post'>Design, Pattern</span>
+						</div>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+						   enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					</article>
+					<article>
+						<h3>Creating pixel perfect icons in Figma</h3>
+						<div class='year-post'>
+							<span class='year'>12 Feb 2020</span><!--
+						--><span class='type-post'>Figma, Icon Design</span>
+						</div>
+						<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+						   enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+					</article>
+				</div>
+			</div>
+		</section>
 		
-		<section class='works'>
+		<section class='featured-works'>
 			<div class='container'>
 				<h4>Featured works</h4>
 				<article class='container d-flex justify-between align-start'>
@@ -53,7 +83,7 @@
 					</div>
 					<div>
 						<h2>Designing Dashboards</h2>
-						<div class='span'>
+						<div class='year-works'>
 							<span class='year'>2020</span>
 							<span class='type-works'>Dashboard</span>
 						</div>
@@ -61,14 +91,14 @@
 						   enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 					</div>
 				</article>
-
+				
 				<article class='container d-flex justify-between align-start'>
 					<div class='container-img'>
 						<img src='images/Rectangle32.png' alt='img'>
 					</div>
 					<div>
 						<h2>Vibrant Portraits of 2020</h2>
-						<div class='span'>
+						<div class='year-works'>
 							<span class='year'>2018</span>
 							<span class='type-works'>Illustration</span>
 						</div>
@@ -76,14 +106,14 @@
 						   enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 					</div>
 				</article>
-		
+				
 				<article class='container d-flex justify-between align-start'>
 					<div class='container-img'>
 						<img src='images/Rectangle34.png' alt='img'>
 					</div>
 					<div>
 						<h2>36 Days of Malayalam type</h2>
-						<div class='span'>
+						<div class='year-works'>
 							<span class='year'>2018</span>
 							<span class='type-works'>Typography</span>
 						</div>
@@ -91,9 +121,10 @@
 						   enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 					</div>
 				</article>
-
+			
 			</div>
 		</section>
+		
 		
 		<!--<form name="search" action="#" method="post" target="_blank" style="margin: auto; max-width: 600px;">-->
 		<!--    <div style="max-width: 564px;">-->
@@ -127,27 +158,40 @@
 		<!--        <input style="width: 100%" name="file" type="file" id="file">-->
 		<!--    </div>-->
 		<!--    <div style="max-width: 564px;">-->
-		<!--        <label for="message" style="display: none">Message</label>-->
-		<!--        <textarea id="message" name="message" style="height: 150px; width: 100%; resize: none;"></textarea>-->
+<!--		        <label for="message" style="display: none">Message</label>-->
+<!--		        <textarea id="message" name="message" style="height: 150px; width: 100%; resize: none;"></textarea>-->
 		<!--    </div>-->
 		<!--    <div style="max-width: 564px;">-->
-		<!--        <label for="city" style="display: none">Message</label>-->
-		<!--        <select id="city" name="city" style="width: 100%">-->
-		<!--            <option>Kiev</option>-->
-		<!--            <option>Kharkiv</option>-->
-		<!--            <option>Dnepr</option>-->
-		<!--        </select>-->
+<!--		        <label for="city" style="display: none">Message</label>-->
+<!--		        <select id="city" name="city" style="width: 100%">-->
+<!--		            <option>Kiev</option>-->
+<!--		            <option>Kharkiv</option>-->
+<!--		            <option>Dnepr</option>-->
+<!--		        </select>-->
 		<!--    </div>-->
 		<!--    <button type="submit" style="border: solid green 6px;">Send</button>-->
 		<!--</form>-->
-		<!--		<section class='form'>-->
-		<!--			<form name="message" action="#" method="post" target="_blank">-->
-		<!--				<div class='name' style="max-width: 564px;">-->
-		<!--					<label><input style="width: 100%; display:block" name="name" type="text" placeholder='Name'></label>-->
-		<!--					</div>-->
-		<!--				-->
-		<!--			</form>-->
-		<!--		</section>-->
+		
+		
+		<section class='form-request'>
+			<form name='request' action='#' method='post' target='_blank'>
+				<div class='container'>
+					<label for='name'>Name</label>
+					<input name='name' type='text' placeholder='Name' id='name'>
+					<label for='email'>Email</label>
+					<input class='email' name='email' type='email' placeholder='Email' id='email'>
+					<label for='budget'>Budget</label>
+					<select id='budget' name='budget'>
+						<option>Budget</option>
+						<option>200</option>
+						<option>300</option>
+					</select>
+					<label for='project'>Describe youre project...</label>
+					<textarea id='project' name='project' placeholder='Describe youre project...'></textarea>
+					<button type='submit'>Send Message</button>
+				</div>
+			</form>
+		</section>
 	</main>
 	<footer>
 		<div>
@@ -162,5 +206,6 @@
 			</p>
 		</div>
 	</footer>
+	<script src='https://kit.fontawesome.com/b167fcff7e.js' crossorigin='anonymous'></script>
 </body>
 </html>
